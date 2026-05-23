@@ -121,6 +121,7 @@ if __name__ == "__main__":
         FlavorMeta("NPM", "NPM", "npm_copycats"),
         FlavorMeta("Wikipedia", "Wikipedia", "wikipedia_copycats"),
         FlavorMeta("SEO Spam", "SEO Spam", "seo_spam"),
+        FlavorMeta("AI/LLM Extras", "AI/LLM Extras", "extra_ai"),
     ]
 
     print(get_main_ubo_table(main_flovors))
