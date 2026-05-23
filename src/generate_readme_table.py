@@ -48,10 +48,10 @@ def md_tr(*td: str):
     return "|".join(("", *td, "")) + NEW_LINE
 
 def get_ubo_subscribe_url(dist_path: str, filename: str, title: str):
-    return f"https://subscribe.adblockplus.org/?location=https%3A%2F%2Fraw.githubusercontent.com%2Fquenhus%2FuBlock-Origin-dev-filter%2Fmain%2Fdist%2F{dist_path}%2F{filename}.txt&title={param_encode(title)}"
+    return f"https://subscribe.adblockplus.org/?location=https%3A%2F%2Fraw.githubusercontent.com%2Fcommonsourcecs%2FuBlock-Origin-dev-filter%2Fmain%2Fdist%2F{dist_path}%2F{filename}.txt&title={param_encode(title)}"
 
 def get_static_url(dist_path: str, filename: str):
-    return f"https://raw.githubusercontent.com/quenhus/uBlock-Origin-dev-filter/main/dist/{dist_path}/{filename}.txt"
+    return f"https://raw.githubusercontent.com/commonsourcecs/uBlock-Origin-dev-filter/main/dist/{dist_path}/{filename}.txt"
 
 def get_main_ubo_table(flavors: list[FlavorMeta]):
     ret = md_tr("", *(f.table_name for f in flavors))
